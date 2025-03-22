@@ -2,6 +2,9 @@
 
 https://www.npmjs.com/package/easyv2-table
 
+Basic board without customization. You can use the available classes, 
+overwrite the current styles. Easy way: go to the inspector => 'elements'. 
+
 ## Installation
 
 npm install easyv2-table
