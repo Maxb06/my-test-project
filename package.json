@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "easyv2-table": "^2.0.0",
-    "latest": "^0.2.0",
-    "myeasy-table": "^1.0.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
