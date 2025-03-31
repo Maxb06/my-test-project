@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { EasyTableV2, ColumnDef } from "easyv2-table";
 
 type Person = {
@@ -76,14 +77,22 @@ const columns: ColumnDef<Person>[] = [
 ];
 
 function App() {
+  const [tableData, setTableData] = useState(data);
+
+  const handleDelete = (id: string) => {
+    setTableData(tableData.filter((item) => item.id !== id)); 
+  };
+
   return (
     <EasyTableV2
-      data={data}
+      data={tableData} 
       columns={columns}
       pagination
       itemsPerPage={10}
-      search 
+      search
+      onDelete={handleDelete}
     />
   );
 }
+
 export default App;
